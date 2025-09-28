@@ -1,5 +1,9 @@
 # CPR Assistant App
 
+Eshaan Govil: eshaangovil@princeton.edu
+Samiksha Gaherwar: samiksha@princeton.edu
+Hriday Unadkat: hridayunadkat@princeton.edu
+
 A comprehensive CPR guidance application using Python, MediaPipe, and AI-powered assistance. This app provides real-time feedback for CPR performance using pose estimation and intelligent guidance.
 
 ## Features
