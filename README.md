@@ -56,12 +56,7 @@ cd CPRAssistant
 
 2. **Install dependencies**:
 ```bash
-pip install -r requirements.txt
-```
-
-3. **Optional: Set up OpenAI API** (for enhanced LLM features):
-```bash
-export OPENAI_API_KEY="your-api-key-here"
+pip install -r improved_requirements.txt
 ```
 
 ### Dependencies
@@ -70,11 +65,6 @@ The app requires the following Python packages:
 - `opencv-python`: Computer vision and camera handling
 - `mediapipe`: Pose estimation and hand tracking
 - `numpy`: Numerical computations
-- `pygame`: Audio processing and metronome
-- `speechrecognition`: Voice input processing
-- `pyaudio`: Audio input/output
-- `pyttsx3`: Text-to-speech conversion
-- `tkinter`: GUI components (usually included with Python)
 
 ## Usage
 
@@ -82,7 +72,7 @@ The app requires the following Python packages:
 
 1. **Run the application**:
 ```bash
-python enhanced_cpr_assistant.py
+python run_improved_cpr.py
 ```
 
 2. **Select your mode**:
@@ -99,15 +89,6 @@ During CPR practice:
 - **'N'**: Next step (Walkthrough mode)
 - **'S'**: Skip to compressions (Walkthrough mode)
 
-### Q&A Assistant
-
-The AI-powered Q&A system can answer questions like:
-- "What's the correct compression rate?"
-- "How deep should I compress?"
-- "Where do I place my hands?"
-- "When do I give rescue breaths?"
-- "What if I'm alone?"
-
 ## Technical Details
 
 ### Pose Estimation
@@ -121,12 +102,6 @@ The AI-powered Q&A system can answer questions like:
 - **Hand Placement Score**: Accuracy of hand positioning
 - **Compression Depth**: Estimated compression depth
 - **Rhythm Analysis**: Consistency of compression timing
-
-### Audio Features
-- **Metronome**: Audio/visual beat at 100-120 BPM
-- **Voice Guidance**: Spoken instructions and feedback
-- **Voice Input**: Ask questions using speech recognition
-- **Audio Feedback**: Immediate performance corrections
 
 ## Safety Features
 
@@ -148,10 +123,6 @@ The AI-powered Q&A system can answer questions like:
    - Ensure camera is connected and not used by other applications
    - Check camera permissions
 
-2. **Audio issues**:
-   - Verify microphone permissions
-   - Check audio device settings
-
 3. **Performance issues**:
    - Close other applications to free up resources
    - Ensure good lighting for pose estimation
@@ -160,34 +131,6 @@ The AI-powered Q&A system can answer questions like:
 - **OS**: Windows, macOS, or Linux
 - **RAM**: 4GB minimum, 8GB recommended
 - **Camera**: USB webcam or built-in camera
-- **Audio**: Microphone and speakers/headphones
-
-## Development
-
-### Project Structure
-```
-CPRAssistant/
-├── enhanced_cpr_assistant.py    # Main application
-├── llm_cpr_guide.py            # LLM integration
-├── cpr_assistant.py            # Basic version
-├── requirements.txt            # Dependencies
-└── README.md                   # This file
-```
-
-### Key Components
-- **CPRAssistant**: Main application class
-- **LLMCPRGuide**: AI-powered guidance system
-- **Pose Estimation**: MediaPipe integration
-- **Audio System**: Metronome and voice features
-- **UI Components**: Tkinter-based interface
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
 
 ## License
 
