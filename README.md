@@ -1,5 +1,7 @@
 # CPR Assistant App
 
+WINNER of Qualcomm Snapdragon Multiverse Hackathon at Princeton University
+
 Eshaan Govil: eshaangovil@princeton.edu
 Samiksha Gaherwar: samiksha@princeton.edu
 Hriday Unadkat: hridayunadkat@princeton.edu
